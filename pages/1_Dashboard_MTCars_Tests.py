@@ -27,6 +27,7 @@ df = pd.read_csv(DATA_PATH)
 st.dataframe(df)
 
 #models = st.selectbox("Select the model:", df['model'].unique())
+st.subheader("Click Below to see values")
 btn_mpg = st.button("mpg")
 if btn_mpg == True:
     st.subheader("mpg")
