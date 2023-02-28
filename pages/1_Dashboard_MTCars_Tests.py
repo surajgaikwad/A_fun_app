@@ -26,5 +26,5 @@ st.image(img)
 df = pd.read_csv(DATA_PATH)
 st.dataframe(df)
 
-models = st.selectbox("Select the model:", df['model'].unique())
+#models = st.selectbox("Select the model:", df['model'].unique())
 st.bar_chart(df, y = 'mpg', x='model')
