@@ -7,5 +7,5 @@ st.snow()
 btn_click = st.button("Select Me!")
 
 if btn_click == True:
-    st.subheader("Yaayy!! I am selected :man_dancing:")
+    st.subheader("Yaayy!! I'm selected :man_dancing:")
     st.balloons()
