@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Innomatics Internship 2023")
+st.title(":red[Innomatics] Internship 2023")
 st.snow()
 
 btn_click = st.button("Select Me!")
