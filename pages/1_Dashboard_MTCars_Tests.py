@@ -27,4 +27,4 @@ df = pd.read_csv(DATA_PATH)
 st.dataframe(df)
 
 #models = st.selectbox("Select the model:", df['model'].unique())
-st.bar_chart(df, y = 'mpg', x='model')
+st.bar_chart(df, y = 'mpg', x='model' sort=None)
