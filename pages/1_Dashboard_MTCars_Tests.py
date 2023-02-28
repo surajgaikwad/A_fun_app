@@ -27,11 +27,31 @@ df = pd.read_csv(DATA_PATH)
 st.dataframe(df)
 
 #models = st.selectbox("Select the model:", df['model'].unique())
-st.subheader("mpg")
-st.bar_chart(df, y = 'mpg', x='model')
-st.subheader("cylinders")
-st.bar_chart(df, y = 'cyl', x='model')
-st.subheader("disp")
-st.bar_chart(df, y = 'disp', x='model')
-st.subheader("Horse Power")
-st.bar_chart(df, y='disp', x='model')
+btn_mpg = st.button("mpg")
+if btn_mpg == True:
+    st.subheader("mpg")
+    st.bar_chart(df, y = 'mpg', x='model')
+btn_cyl = st.button("cyl")
+if btn_cyl == True:   
+    st.subheader("cyl")
+    st.bar_chart(df, y = 'cyl', x='model')
+btn_disp = st.button("disp")
+if btn_disp ==True:
+    st.subheader("disp")
+    st.bar_chart(df, y = 'disp', x='model')
+btn_hp = st.button("hp")
+if btn_hp == True:  
+    st.subheader("Horse Power")
+    st.bar_chart(df, y='disp', x='model')
+btn_drat = st.button("drat")
+if btn_drat == True:
+    st.subheader("drat")
+    st.bar_chart(df, y='drat', x='model')
+btn_wt = st.button("wt")    
+if btn_wt == True:
+    st.subheader("wt")
+    st.bar_chart(df, y='wt', x='model')
+btn_qsec = st.button("qsec")
+if btn_qsec == True:
+    st.subheader("qsec")
+    st.bar_chart(df, y='qsec', x='model')        
