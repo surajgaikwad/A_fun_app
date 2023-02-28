@@ -1,10 +1,10 @@
 import streamlit as st
 
-st.title("Innomatics Data App")
+st.title("Innomatics Internship 2023")
 st.snow()
 
-btn_click = st.button("Click Me!")
+btn_click = st.button("Select Me!")
 
 if btn_click == True:
-    st.subheader("You clicked me :cry:")
+    st.subheader("Yaay!! You selected me :happy:")
     st.balloons()
